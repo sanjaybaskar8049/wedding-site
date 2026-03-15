@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#722f37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="Sanjay & Harshini Wedding - 27 May 2026">
+    <title>Sanjay & Harshini | Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&family=Noto+Sans+Tamil:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floral Petals Container -->
+    <div id="petals-container" class="petals-container"></div>
+
+    <!-- Language Toggle Button -->
+    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Tamil/English">
+        <span class="lang-text">தமிழ்</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" data-en="Home" data-ta="முகப்பு">Home</a></li>
+            <li><a href="#couple" data-en="Our Story" data-ta="எங்கள் கதை">Our Story</a></li>
+            <li><a href="#event" data-en="Event" data-ta="நிகழ்வு">Event</a></li>
+            <li><a href="#venue" data-en="Venue" data-ta="இடம்">Venue</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="save-date" data-en="Save the Date" data-ta="தேதியை நினைவில் கொள்ளுங்கள்">Save the Date</p>
+            <h1 class="couple-names">Sanjay <span class="ampersand">&</span> Harshini</h1>
+            <p class="wedding-tagline" data-en="We're Getting Married!" data-ta="வாழ்த்த வாருங்கள்!">We're Getting Married!</p>
+            <div class="wedding-date">
+                <span class="date-number">27</span>
+                <span class="date-month" data-en="May" data-ta="மே">May</span>
+                <span class="date-year">2026</span>
+            </div>
+            <p class="muhurtham-time" data-en="Muhurtham: 9:00 AM - 10:30 AM" data-ta="முகூர்த்தம்: காலை 9:00 - 10:30">Muhurtham: 9:00 AM - 10:30 AM</p>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-number">0</span>
+                    <span class="countdown-label" data-en="Days" data-ta="நாட்கள்">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-number">0</span>
+                    <span class="countdown-label" data-en="Hours" data-ta="மணி">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-number">0</span>
+                    <span class="countdown-label" data-en="Minutes" data-ta="நிமிடங்கள்">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-number">0</span>
+                    <span class="countdown-label" data-en="Seconds" data-ta="வினாடிகள்">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-en="Scroll Down" data-ta="கீழே நகர்த்தவும்">Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Couple Section -->
+    <section id="couple" class="couple-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Story" data-ta="எங்கள் கதை">Our Story</h2>
+            <div class="decorative-line"></div>
+            <div class="couple-grid">
+                <div class="person bride">
+                    <div class="person-image">
+                        <div class="image-placeholder">
+                            <span>Harshini</span>
+                        </div>
+                    </div>
+                    <h3>Harshini</h3>
+                    <p class="person-role" data-en="The Bride" data-ta="மணப்பெண்">The Bride</p>
+                    <p class="person-quote" data-en="Blessed by our families, we begin this beautiful journey together." data-ta="குடும்பங்களின் ஆசியுடன், இந்த அழகான பயணத்தை ஒன்றாகத் தொடங்குகிறோம்.">"Blessed by our families, we begin this beautiful journey together."</p>
+                </div>
+                <div class="couple-heart">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 28C16 28 3 18 3 10C3 5.58172 6.58172 2 11 2C13.3894 2 15.5504 3.08942 17 4.83497C17.7003 4.00018 18.5715 3.31991 19.5531 2.84279C20.5347 2.36567 21.6053 2.10238 22.6935 2.06948C23.7817 2.03658 24.8653 2.23465 25.8712 2.65156C26.8771 3.06846 27.7836 3.69476 28.5282 4.48669C29.2728 5.27862 29.8383 6.21856 30.1876 7.24613C30.5369 8.27369 30.6621 9.36683 30.5548 10.449C30.4475 11.5311 30.1102 12.5792 29.5648 13.5238C29.0194 14.4684 28.2782 15.288 27.3918 15.9275" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="person groom">
+                    <div class="person-image">
+                        <div class="image-placeholder">
+                            <span>Sanjay</span>
+                        </div>
+                    </div>
+                    <h3>Sanjay</h3>
+                    <p class="person-role" data-en="The Groom" data-ta="மணமகன்">The Groom</p>
+                    <p class="person-quote" data-en="Join us as we say 'I do' and begin our 'Always'." data-ta="நாங்கள் இல்லற வாழ்வில் இணையும் இவ்வேளையில், எங்களின் என்றும் மாறா அன்பின் தொடக்கத்தை எங்களுடன் இணைந்து சிறப்பிக்க வாருங்கள்.">"Join us as we say 'I do' and begin our 'Always'."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="event-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Wedding Celebration" data-ta="திருமண விழா">Wedding Celebration</h2>
+            <div class="decorative-line"></div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Wedding Muhurtham" data-ta="திருமண முகூர்த்தம்">Wedding Muhurtham</h3>
+                    <p class="event-date" data-en="27th May 2026" data-ta="27 மே 2026">27th May 2026</p>
+                    <p class="event-time" data-en="9:00 AM - 10:30 AM" data-ta="காலை 9:00 - 10:30">9:00 AM - 10:30 AM</p>
+                    <p class="event-desc" data-en="Join us as we begin our journey together with traditional ceremonies and blessings." data-ta="பாரம்பரிய சடங்குகள் மற்றும் ஆசீர்வாதங்களுடன் எங்கள் பயணத்தைத் தொடங்கும் இந்த நிகழ்வில் எங்களுடன் இணையுங்கள்.">Join us as we begin our journey together with traditional ceremonies and blessings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="venue-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Venue" data-ta="இடம்">Venue</h2>
+            <div class="decorative-line"></div>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <div class="venue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Sri Balaji Mahal" data-ta="ஸ்ரீ பாலாஜி மஹால்">Sri Balaji Mahal</h3>
+                    <p class="venue-address" data-en="Vallalar, Double Road<br>Vellore - 632009" data-ta="வள்ளலார், டபுள் ரோடு<br>வேலூர் - 632009">
+                        Vallalar, Double Road<br>
+                        Vellore - 632009
+                    </p>
+                    <a href="https://share.google/H9qRhlNFnG8xHTjqi" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-primary"
+                       data-en="Get Directions"
+                       data-ta="வழி தேடு">
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="footer-names">Sanjay & Harshini</h2>
+            <p class="footer-date" data-en="27 May 2026" data-ta="27 மே 2026">27 May 2026</p>
+            <div class="footer-hearts">
+                ❤️ ❤️ ❤️
+            </div>
+            <p class="footer-message" data-en="Thank you for being part of our special day!" data-ta="எங்கள் சிறப்பான நாளில் பங்கேற்றதற்கு நன்றி!">Thank you for being part of our special day!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
